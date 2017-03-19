@@ -22,7 +22,7 @@ exports.create_a_user = function(req, res) {
 };
 
 exports.get_a_user = function(req, res) {
-  User.findById(req.params._id, function(err, user) {
+  User.findById(req.params.userId, function(err, user) {
     if (err)
       res.send(err);
     res.json(user);
@@ -31,7 +31,7 @@ exports.get_a_user = function(req, res) {
 
 exports.delete_a_user = function(req, res) {
   User.remove({
-    _id: req.params._id
+    _id: req.params.userId
   }, function(err, user) {
     if (err)
       res.send(err);
