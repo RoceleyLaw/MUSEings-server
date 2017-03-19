@@ -22,7 +22,7 @@ exports.create_a_user = function(req, res) {
 };
 
 exports.get_a_user = function(req, res) {
-  User.findById(req.params.id, function(err, user) {
+  User.findOne({_id: req.params.id}, function(err, user) {
     if (err)
       res.send(err);
     res.json(user);
