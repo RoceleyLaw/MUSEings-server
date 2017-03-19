@@ -1,0 +1,24 @@
+{
+  "name": "museings-api",
+  "version": "1.0.0",
+  "description": "this is the RESTful Api created for the MUSEings project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "RESTful",
+    "API"
+  ],
+  "author": "Roceley Si Yan Luo",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mongoose": "^4.9.0"
+  }
+}
