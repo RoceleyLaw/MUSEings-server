@@ -10,5 +10,4 @@ module.exports = function(app) {
   app.route('/users/:id')
     .get(userController.get_a_user)
     .delete(userController.delete_a_user);
-
 };
