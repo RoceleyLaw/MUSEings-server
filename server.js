@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 
 //mongoose.Promise = global.Promise;
 //mongoose.connect('mongodb://localhost/userdb');
-mongoose.connect('mongodb://roceleylaw:museings1234@ds135700.mlab.com:35700/museings');
+mongoose.connect('mongodb://roceleylaw:museings1234@ds163699.mlab.com:63699/museings');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(function (req, res, next) {
