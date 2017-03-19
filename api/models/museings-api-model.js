@@ -3,7 +3,7 @@ var Schema = mongoose.Schema;
 
 var userSchema = new Schema({
   username: { type: String, required: true },
-  data: [ Number ],
+  data: { type: String },
   audio: { type: String }
 });
 
